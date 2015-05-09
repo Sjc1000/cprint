@@ -7,8 +7,11 @@ Here is an example of how to use it.
 from cprint import cprint
 cprint('[.red]This will be red!')
 ```
+You use [./color] to end the color or style. You can also use [.endall] to end all styling.
 
-there is a list of all the colors in the cprint file. You can use [./] or [.end] to end the last style used. So if you use [.red]red[./] not red. Red will be red and not red will be well, not red.
-You can take it even further. [.red][.underline]red and underline[.end] just red.
+```Python
+from cprint import cprint
+cprint('[.red]This will be red.[.underline] This will be red and underlined.[./red] This will just be underlined!')
+```
 
-There is also an endall that you can use, which ends all of styles at once.
+There is a list of all the colors in the cprint file.
